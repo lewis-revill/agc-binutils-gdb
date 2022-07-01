@@ -96,6 +96,7 @@ BFD64_LIBS_CFILES = archive64.c
 # with the decls and initializer in archures.c.
 ALL_MACHINES = \
 	cpu-aarch64.lo \
+	cpu-agc.lo \
 	cpu-alpha.lo \
 	cpu-amdgcn.lo \
 	cpu-arc.lo \
@@ -179,6 +180,7 @@ ALL_MACHINES = \
 
 ALL_MACHINES_CFILES = \
 	cpu-aarch64.c \
+	cpu-agc.c \
 	cpu-alpha.c \
 	cpu-amdgcn.c \
 	cpu-arc.c \
@@ -293,6 +295,7 @@ BFD32_BACKENDS = \
 	elf-strtab.lo \
 	elf-vxworks.lo \
 	elf.lo \
+	elf32-agc.lo \
 	elf32-am33lin.lo \
 	elf32-arc.lo \
 	elf32-arm.lo \
@@ -425,6 +428,7 @@ BFD32_BACKENDS_CFILES = \
 	elf-strtab.c \
 	elf-vxworks.c \
 	elf.c \
+	elf32-agc.c \
 	elf32-am33lin.c \
 	elf32-arc.c \
 	elf32-arm.c \
@@ -688,8 +692,8 @@ SOURCE_HFILES = \
 	coff-arm.h coff-bfd.h coffcode.h coffswap.h \
 	cpu-aarch64.h cpu-arm.h cpu-h8300.h cpu-m68k.h cpu-riscv.h \
 	ecoff-bfd.h ecoffswap.h \
-	elf32-arm.h elf32-avr.h elf32-bfin.h elf32-cr16.h elf32-csky.h \
-	elf32-dlx.h elf32-hppa.h elf32-m68hc1x.h elf32-m68k.h \
+	elf32-agc.h elf32-arm.h elf32-avr.h elf32-bfin.h elf32-cr16.h \
+	elf32-csky.h elf32-dlx.h elf32-hppa.h elf32-m68hc1x.h elf32-m68k.h \
 	elf32-metag.h elf32-nds32.h elf32-nios2.h elf32-ppc.h \
 	elf32-rx.h elf32-score.h elf32-sh-relocs.h elf32-spu.h \
 	elf32-tic6x.h elf32-tilegx.h elf32-tilepro.h elf32-v850.h \

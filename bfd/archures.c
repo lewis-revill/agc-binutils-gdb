@@ -562,6 +562,8 @@ DESCRIPTION
 .#define bfd_mach_amdgcn_gfx1030 0x036
 .#define bfd_mach_amdgcn_gfx1031 0x037
 .#define bfd_mach_amdgcn_gfx1032 0x038
+.  bfd_arch_agc
+.#define bfd_mach_agc 0
 .  bfd_arch_last
 .  };
 */
@@ -616,6 +618,7 @@ DESCRIPTION
 */
 
 extern const bfd_arch_info_type bfd_aarch64_arch;
+extern const bfd_arch_info_type bfd_agc_arch;
 extern const bfd_arch_info_type bfd_alpha_arch;
 extern const bfd_arch_info_type bfd_amdgcn_arch;
 extern const bfd_arch_info_type bfd_arc_arch;
@@ -704,6 +707,7 @@ static const bfd_arch_info_type * const bfd_archures_list[] =
     SELECT_ARCHITECTURES,
 #else
     &bfd_aarch64_arch,
+    &bfd_agc_arch,
     &bfd_alpha_arch,
     &bfd_amdgcn_arch,
     &bfd_arc_arch,

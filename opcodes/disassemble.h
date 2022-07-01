@@ -22,6 +22,7 @@
 #include "dis-asm.h"
 
 extern int print_insn_aarch64		(bfd_vma, disassemble_info *);
+extern int print_insn_agc		(bfd_vma, disassemble_info *);
 extern int print_insn_alpha		(bfd_vma, disassemble_info *);
 extern int print_insn_avr		(bfd_vma, disassemble_info *);
 extern int print_insn_bfin		(bfd_vma, disassemble_info *);

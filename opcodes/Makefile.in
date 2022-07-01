@@ -511,6 +511,7 @@ TARGET64_LIBOPCODES_CFILES = \
 	tilegx-opc.c
 
 TARGET32_LIBOPCODES_CFILES = \
+	agc-dis.c \
 	arc-dis.c \
 	arc-ext.c \
 	arc-opc.c \
@@ -894,6 +895,7 @@ distclean-compile:
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/aarch64-dis.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/aarch64-opc-2.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/aarch64-opc.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/agc-dis.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/alpha-dis.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/alpha-opc.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/arc-dis.Plo@am__quote@

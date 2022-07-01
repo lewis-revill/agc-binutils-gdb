@@ -119,6 +119,7 @@ TARGET64_LIBOPCODES_CFILES = \
 	tilegx-opc.c
 
 TARGET32_LIBOPCODES_CFILES = \
+	agc-dis.c \
 	arc-dis.c \
 	arc-ext.c \
 	arc-opc.c \

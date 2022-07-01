@@ -37,6 +37,7 @@
 #define ARCH_score
 #define ARCH_tilegx
 #endif
+#define ARCH_agc
 #define ARCH_arc
 #define ARCH_arm
 #define ARCH_avr
@@ -140,6 +141,11 @@ disassembler (enum bfd_architecture a,
 #ifdef ARCH_aarch64
     case bfd_arch_aarch64:
       disassemble = print_insn_aarch64;
+      break;
+#endif
+#ifdef ARCH_agc
+    case bfd_arch_agc:
+      disassemble = print_insn_agc;
       break;
 #endif
 #ifdef ARCH_alpha

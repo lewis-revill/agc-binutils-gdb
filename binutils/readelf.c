@@ -2990,6 +2990,7 @@ get_machine_name (unsigned e_machine)
     case EM_KF32:		return "ChipON KungFu32";
 
       /* Large numbers...  */
+    case EM_AGC:                return "Apollo Guidance Computer";
     case EM_MT:                 return "Morpho Techologies MT processor";
     case EM_ALPHA:		return "Alpha";
     case EM_WEBASSEMBLY:	return "Web Assembly";
